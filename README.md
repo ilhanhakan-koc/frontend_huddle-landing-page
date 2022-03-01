@@ -43,7 +43,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Google](https://www.google.com
+- [Google] (https://www.google.com)
 
 ## Author
 

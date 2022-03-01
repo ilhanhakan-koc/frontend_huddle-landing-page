@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-huddle-UzB1rXWUu)
+- Live Site URL: [Live Demo](https://ilhanhakan-koc.github.io/frontend_huddle-landing-page/)
 
 ## My process
 

@@ -1,0 +1,259 @@
+:root {
+
+    --clr-primary-violet: hsl(257, 40%, 49%);
+    --clr-primary-smagenta: hsl(300, 69%, 71%);
+
+    --ff-heading: 'Poppins', sans-serif;
+    --ff-body: 'Open Sans', sans-serif;
+    
+    --fw-regular: 400;
+    --fw-bold: 600;
+
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    background: url(images/bg-desktop.svg);
+    background-size: contain;
+    background-color: var(--clr-primary-violet);
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+.header {
+    max-width: 87%;
+    margin: 0 auto;
+    padding-top: 5em;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: 
+    'left right';
+    justify-items: center;
+}
+
+.main__container--left {
+    grid-area: left;
+}
+
+.main__container--right {
+    grid-area: right;
+    max-width: 90%;
+    margin-right: 5em;
+}
+
+.main__container--right > * {
+    padding-top: 1.5em;
+}
+
+.container__right--header h1 {
+    color: white;
+    font-family: var(--ff-heading);
+    font-size: 3.2rem;
+    font-weight: var(--fw-bold);
+}
+
+.container__right--text {
+    max-width: 95%;
+}
+
+.container__right--text p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.register--btn {
+   min-width: 230px;
+   min-height: 70px;
+   border-radius: 5em;
+   border: 1px solid var(--clr-primary-violet);
+   font-size: 1.2rem;
+   color: var(--clr-primary-violet);
+   cursor: pointer;
+   box-shadow: 1px 2px 15px 3px hsl(256.8, 44.1%, 36.5%);
+   transition: all 500ms ease-in-out;
+}
+
+.register--btn:hover {
+    background-color: var(--clr-primary-smagenta);
+}
+
+.footer {
+    position: relative;
+}
+
+.footer ul {
+    max-width: 87%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 1em;
+    right: 7%;
+}
+
+.footer ul li {
+    color: white;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+.footer ul li > i {
+    font-size: 1.3rem;
+    border: 1px solid white;
+    padding: .8em;
+    border-radius: 50%;
+    transition: all 500ms ease-in-out;
+}
+
+.footer ul li i:hover {
+    color: var(--clr-primary-smagenta);
+    border: 1px solid var(--clr-primary-smagenta);
+}
+
+@media screen and (max-width: 1500px) {
+
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-size: contain;
+    }
+
+    .main__container {
+        grid-template-areas: 
+        'left left'
+        'right right';
+        row-gap: 3em;
+    }
+
+    .main__container--right {
+        text-align: center;
+        max-width: 50%;
+        margin-right: 0;
+    }
+
+    .main__container--left img {
+        max-width: 60%;    
+    }
+
+    .main__container--left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container__right--header h1 {
+        font-size: 2rem;
+    }
+
+    .container__right--button {
+        padding-top: 2em;  
+    }
+
+    .register--btn {
+        min-width: 270px;
+        min-height: 50px;
+    }
+
+    .footer ul {
+        position: relative;
+        padding-top: 5em;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .footer ul li > i {
+        font-size: .8rem;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    .header {
+        padding-bottom: 5em;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .footer ul {
+        position: absolute;
+        bottom: -102px;
+        left: 0;
+        right: 7%;
+        padding-bottom: 1em;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+
+    .footer ul {
+        position: absolute;
+        bottom: -102px;
+        left: 0;
+        right: 8%;
+        padding-bottom: 1em;
+    }
+
+}
+
+@media screen and (max-width: 550px) { 
+
+    .register--btn {
+        font-size: 1rem;
+        min-width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 400px) { 
+
+    .register--btn {
+        font-size: 1rem;
+        min-width: 100px;
+    }
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(296, 45%, 86%); }

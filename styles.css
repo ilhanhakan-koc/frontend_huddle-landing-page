@@ -116,19 +116,17 @@ picture {
     background-color: var(--clr-primary-smagenta);
 }
 
-.footer {
-    position: relative;
+.footer__icons {
+    display: flex;
+    justify-content: end;
 }
 
-.footer ul {
-    max-width: 87%;
+.footer__icons ul { 
     display: flex;
     list-style: none;
-    justify-content: flex-end;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 1em;
-    right: 7%;
+    position: relative;
+    top: -60px;
+    margin-right: 5em;
 }
 
 .footer ul li {
@@ -137,12 +135,13 @@ picture {
     cursor: pointer;
 }
 
-.footer ul li > i {
+.footer ul li a > i {
     font-size: 1.3rem;
     border: 1px solid white;
     padding: .8em;
     border-radius: 50%;
     transition: all 500ms ease-in-out;
+    color: white;
 }
 
 .footer ul li i:hover {
@@ -195,11 +194,11 @@ picture {
     .footer ul {
         position: relative;
         padding-top: 5em;
-        justify-content: center;
         margin-right: 0;
+        padding-left: .5em;
     }
 
-    .footer ul li > i {
+    .footer ul li a > i {
         font-size: .8rem;
     }
 
@@ -214,24 +213,12 @@ picture {
         margin-left: 0;
     }
 
-    .footer ul {
-        position: absolute;
-        bottom: -102px;
-        left: 0;
-        right: 7%;
-        padding-bottom: 1em;
+    .footer__icons {
+        justify-content: center;
     }
 
-}
-
-@media screen and (max-width: 840px) {
-
-    .footer ul {
-        position: absolute;
-        bottom: -102px;
-        left: 0;
-        right: 8%;
-        padding-bottom: 1em;
+    .main__container--right {
+        max-width: 80%;
     }
 
 }
@@ -250,6 +237,14 @@ picture {
     .register--btn {
         font-size: 1rem;
         min-width: 100px;
+    }
+
+    .container__right--header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container__right--text p {
+        font-size: 1rem;
     }
 
 }

@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./screenshot.PNG)
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-landing-page-huddle-UzB1rXWUu)
+- Live Site URL: [Live Demo](https://ilhanhakan-koc.github.io/frontend_huddle-landing-page/)
 
 ## My process
 
@@ -43,7 +43,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Google](https://www.google.com
+- [Google] (https://www.google.com)
 
 ## Author
 
